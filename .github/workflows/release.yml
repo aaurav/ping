@@ -38,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          # This tells the action to use pnpm for the tauri build command
+          # THIS IS THE CRITICAL PART FOR TAURI V2 + PNPM
           tauriScript: pnpm tauri
           tagName: v__VERSION__
           releaseName: "Ping App v__VERSION__"
